@@ -1,47 +1,54 @@
-@import url('https://fronts.googleapis/com/css2?family=font-name&family=optional-2nd-font-name&display=swap') ;
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+
+:root {
+    --primary-color: #ff0000; /* Replace with actual color */
+    --secondary-color: #00ff00; /* Replace with actual color */
+    --accent1-color: #0000ff; /* Replace with actual color */
+    --accent-color: #ffff00; /* Replace with actual color */
+    --heading-font: 'font-name', serif; /* Replace with actual font name */
+    --paragraph-font: 'optional-2nd-font-name', serif; /* Replace with actual font name */
+    --nav-background-color: #333333; /* Replace with actual color */
+    --nav-link-color: #ffffff; /* Replace with actual color */
+    --nav-hover-link-color: #ff0000; /* Replace with actual color */
+    --nav-hover-background-color: #444444; /* Replace with actual color */
+}
+
 body {
     font-family: var(--paragraph-font);
-    max-width : 960px;
-    padding : 20px;
+    max-width: 960px;
+    padding: 20px;
 }
-:root {
---primary-color : #xxxxxx;
---secondary-color : #xxxxxx;
---accent1-color : #xxxxxx;
---accent-color : #xxxxxx;
---heading-font : '_______',serif;
---paragraph-font : '_______',serif;
---nav-backround-color : #xxxxxx;
---nav-link-color : #xxxxxx;
---nav-hover-link-color : #xxxxxx;
---nav-hover-background-color : #xxxxxx;
-}
-main{
+
+main {
     max-width: 840px;
 }
-aside{
+
+aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 1); /* 1*/
+    border: 1px solid rgba(0, 0, 0, 1); /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
-aside img{
+
+aside img {
     width: 200px;
     height: auto;
 }
-main img{
+
+main img {
     width: 150px;
     height: auto;
-    
 }
-p{padding: 0;}
 
-footer{
+p {
+    padding: 0;
+}
+
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-
 }
