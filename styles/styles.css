@@ -1,79 +1,71 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
-main{
+main {
     max-width: 840px;
-
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
-aside{
+aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0,0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
     padding: 1rem;
     background-color: #eee;
     color: #000;
     text-align: center;
-
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
-aside img{
+
+aside img {
     width: 200px;
     height: auto;
     float: right;
-
 }
 
-main img{
+aside h2 {
+    position: absolute;
+    top: 50%; /* Adjusted to center the element vertically */
+    left: 150px;
+    transform: translateY(-50%); /* To truly center the element */
+}
+
+main img {
     width: 150px;
     height: auto;
-
+    float: right;
 }
+
 p {
     padding: 0;
-
 }
 
-footer{
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text-align: Center;
+    text-align: center;
 }
 
 /* Class Selectors */
 
-.box{
+.box {
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1px;
     background-color: #ddd;
     color: #000;
 }
 
-aside {
-    width:  20em;
-    text-align: center;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-
-}
-
-aside h2{
-    position: absolute;
-    top: center;
-    left: 150px;
-
-}
-
 header, .grid, footer {
-    
     max-width: 840px;
     margin: 0 auto;
-
 }
 
 nav {
@@ -82,38 +74,18 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
 }
 
-nav a{
+nav a {
     display: block;
     padding: 0.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff; /* shorthand for white */
-
 }
-.grid{
+
+.grid {
     display: grid;
     align-items: center;
-
 }
-
-main{
-    grid-column: auto;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    
-}
-
-header, .grid, footer{
-    max-width: 840px;
-    margin: 0 auto;
-}
-
-main img{
-    float: right;
-}
-
