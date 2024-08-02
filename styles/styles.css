@@ -5,7 +5,7 @@
 }
 
 main {
-    max-width: 90%; /* Set to a percentage for responsiveness */
+    max-width: 90%;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -14,8 +14,8 @@ main {
 }
 
 aside, .box {
-    width: 100%; /* Responsive width */
-    max-width: 400px; /* Limit maximum width */
+    width: 100%;
+    max-width: 400px;
     margin: 1rem auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -28,8 +28,8 @@ aside, .box {
 }
 
 .box img, aside img {
-    width: 100%; /* Make image responsive */
-    max-width: 200px; /* Limit maximum width */
+    width: 100%;
+    max-width: 200px;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -47,7 +47,6 @@ footer {
     padding: 1rem;
 }
 
-/* Responsive Nav */
 header, .grid, footer {
     max-width: 90%;
     margin: 0 auto;
@@ -78,7 +77,6 @@ nav a {
     gap: 1rem;
 }
 
-/* Media Query for Smaller Screens */
 @media (max-width: 600px) {
     aside, .box {
         padding: 0.5rem;
@@ -93,6 +91,6 @@ nav a {
     }
 
     img {
-        max-width: 100%; /* Make sure the image scales down */
+        max-width: 100%;
     }
 }
