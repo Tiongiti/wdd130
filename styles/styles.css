@@ -4,93 +4,86 @@
     box-sizing: border-box;
 }
 
-main {
-    max-width: 90%;
-    margin: 1rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: steelblue;
     padding: 1rem;
 }
 
-aside, .box {
-    width: 100%;
-    max-width: 400px;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    background-color: #eee;
-    color: #000;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.box img, aside img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-aside h2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-    padding: 1rem;
-}
-
-header, .grid, footer {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
+header img {
+    width: 100px;
 }
 
 nav {
-    background-color: steelblue;
-    padding: 1rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 nav a {
-    padding: 0.5rem;
+    color: white;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #fff;
-    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta-button {
+    background-color: #ff5733;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.box {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
 }
 
 .grid {
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
-@media (max-width: 600px) {
-    aside, .box {
-        padding: 0.5rem;
+.grid-item {
+    flex: 1 1 calc(50% - 1rem);
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .grid-item {
+        flex: 1 1 100%;
     }
 
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-    }
-
-    img {
-        max-width: 100%;
+    .hero {
+        padding: 3rem 1rem;
     }
 }
