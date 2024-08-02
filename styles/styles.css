@@ -5,16 +5,18 @@
 }
 
 main {
-    max-width: 840px;
+    max-width: 90%; /* Set to a percentage for responsiveness */
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
 }
 
 aside, .box {
-    width: 20rem;
-    margin: 1rem;
+    width: 100%; /* Responsive width */
+    max-width: 400px; /* Limit maximum width */
+    margin: 1rem auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     background-color: #eee;
@@ -26,7 +28,8 @@ aside, .box {
 }
 
 .box img, aside img {
-    width: 200px;
+    width: 100%; /* Make image responsive */
+    max-width: 200px; /* Limit maximum width */
     height: auto;
     margin-bottom: 1rem;
 }
@@ -41,11 +44,14 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 1rem;
 }
 
+/* Responsive Nav */
 header, .grid, footer {
-    max-width: 840px;
+    max-width: 90%;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 nav {
@@ -54,19 +60,39 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav a {
-    display: block;
     padding: 0.5rem;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     color: #fff;
+    margin: 0.5rem 0;
 }
 
 .grid {
     display: grid;
     align-items: center;
     gap: 1rem;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+    aside, .box {
+        padding: 0.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    img {
+        max-width: 100%; /* Make sure the image scales down */
+    }
 }
