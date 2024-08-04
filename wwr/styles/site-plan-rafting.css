@@ -1,54 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Replace with your chosen font */
 
 :root {
-    --primary-color: #ff0000; /* Replace with actual color */
-    --secondary-color: #00ff00; /* Replace with actual color */
-    --accent1-color: #0000ff; /* Replace with actual color */
-    --accent-color: #ffff00; /* Replace with actual color */
-    --heading-font: 'font-name', serif; /* Replace with actual font name */
-    --paragraph-font: 'optional-2nd-font-name', serif; /* Replace with actual font name */
-    --nav-background-color: #333333; /* Replace with actual color */
-    --nav-link-color: #ffffff; /* Replace with actual color */
-    --nav-hover-link-color: #ff0000; /* Replace with actual color */
-    --nav-hover-background-color: #444444; /* Replace with actual color */
+    --primary-color: #ff6347; /* Replace with your desired color */
+    --secondary-color: #4682b4; /* Replace with your desired color */
+    --accent1-color: #32cd32; /* Replace with your desired color */
+    --accent-color: #ffa500; /* Replace with your desired color */
+    --heading-font: 'Roboto', sans-serif; /* Replace with your chosen font */
+    --paragraph-font: 'Roboto', sans-serif; /* Replace with your chosen font */
+    --nav-background-color: #333333; /* Replace with your desired color */
+    --nav-link-color: #ffffff; /* Replace with your desired color */
+    --nav-hover-link-color: #ff6347; /* Replace with your desired color */
+    --nav-hover-background-color: #444444; /* Replace with your desired color */
 }
 
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
     padding: 20px;
+    margin: 0 auto; /* Center the content on the page */
+    background-color: #f4f4f4; /* Optional: Set a background color */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 main {
     max-width: 840px;
+    margin: 0 auto; /* Center the main content */
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 1); /* 1 */
+    margin: 1rem auto; /* Center the aside element */
+    border: 1px solid rgba(0, 0, 0, 1);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
+aside img,
 main img {
-    width: 150px;
+    max-width: 100%; /* Ensure images are responsive */
     height: auto;
 }
 
 p {
+    margin: 0 0 1em; /* Add spacing between paragraphs */
     padding: 0;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding-top: 10px;
+    font-size: 0.8em;
 }
