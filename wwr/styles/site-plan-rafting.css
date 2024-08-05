@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Replace with your chosen font */
 
-:root {
+head {
     --primary-color: #ff6347; /* Replace with your desired color */
     --secondary-color: #4682b4; /* Replace with your desired color */
     --accent1-color: #32cd32; /* Replace with your desired color */
