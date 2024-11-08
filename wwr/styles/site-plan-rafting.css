@@ -2,6 +2,7 @@
 
 head {
     margin: auto;
+    padding: 0;
     --primary-color: #ff6347; /* Replace with your desired color */
     --secondary-color: #4682b4; /* Replace with your desired color */
     --accent1-color: #32cd32; /* Replace with your desired color */
